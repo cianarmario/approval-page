@@ -1,0 +1,57 @@
+.project-detail-map.legazpi-map { position: relative; min-height: var(--project-popup-min-height, 0px); margin: 0; padding: 0; overflow: hidden; border: 1px solid #dce5ef; border-radius: 0; background: #dce5e8; }
+.project-detail-map-canvas { width: 100%; height: var(--project-detail-map-height, 360px); min-height: var(--project-popup-min-height, 0px); background: #edf1e7; font-family: inherit; }
+.project-detail-map .project-detail-map-canvas { touch-action: none; }
+.project-detail-map .leaflet-container .legazpi-map__natural-tiles img.leaflet-tile { filter: none; mix-blend-mode: normal; }
+.project-detail-map .legazpi-map__label { border: 0; background: transparent; pointer-events: none; }
+.project-detail-map .legazpi-map__label--zoom-hidden { visibility: hidden; }
+.project-detail-map .legazpi-map__label-text { display: block; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: #334b50; font-family: inherit; font-weight: 500; text-align: center; white-space: nowrap; text-shadow: 0 1px 2px #fff, 0 -1px 2px #fff; }
+.project-detail-map .legazpi-map__label-text--selected { color: #245577; font-weight: 600; }
+.project-detail-map .leaflet-control-attribution { max-width: 100%; padding: 1px 3px; background: rgba(255, 255, 255, .7); font-size: 7px; line-height: 1.2; text-align: right; }
+.project-detail-map-views { position: absolute; z-index: 500; top: 12px; right: 12px; display: flex; gap: 2px; padding: 3px; border: 1px solid #d5e0e4; border-radius: 0; background: #fffffff5; box-shadow: 0 1px 3px #183a5110; }
+.project-detail-map-views button { padding: 5px 7px; border: 0; border-radius: 0; background: transparent; color: #60768b; font: inherit; font-size: 10px; font-weight: 500; cursor: pointer; }
+.project-detail-map-views button[aria-pressed="true"] { background: #eaf1fb; color: #285b91; }
+.project-detail-map:has(.project-map-popup) .project-detail-map-views { visibility: hidden; }
+.project-detail-map.legazpi-map .leaflet-control-zoom a { width: 30px; height: 30px; line-height: 30px; }
+.project-detail-map.legazpi-map .leaflet-control-zoom,
+.project-detail-map.legazpi-map .leaflet-control-zoom a:is(:first-child, :last-child) { border-radius: 0; }
+.project-detail-recenter { position: absolute; z-index: 800; top: 84px; left: 10px; display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid #cdd8e1; border-radius: 0; background: #fff; color: #23496d; cursor: pointer; }
+.project-detail-map-error { position: absolute; z-index: 600; right: 12px; bottom: 28px; left: 12px; display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid #dce5ef; border-radius: 0; background: #fffffff5; color: #52647b; font-size: 11px; line-height: 1.5; }
+.project-detail-map-error button { flex-shrink: 0; margin-left: auto; padding: 6px 9px; border: 1px solid #dce5ef; border-radius: 0; background: #fff; color: #26568e; cursor: pointer; }
+.project-detail-marker { background: transparent; }
+.project-detail-marker > span { position: absolute; top: 2px; left: 2px; width: 28px; height: 28px; border: 3px solid #fff; border-radius: 50% 50% 50% 0; background: #2563eb; transform: rotate(-45deg); box-shadow: 0 2px 7px #0b1f3a60; }
+.project-detail-marker > span::after { position: absolute; inset: 7px; border-radius: 50%; background: #fff; content: ''; }
+.legazpi-map .project-map-popup .leaflet-popup-content-wrapper { padding: 0; overflow: hidden; border: 1px solid #d9e4ef; border-radius: 0; background: #fff; box-shadow: 0 5px 22px #193c5c26; }
+.legazpi-map .project-map-popup .leaflet-popup-content { max-height: none; margin: 0; overflow: visible; font-family: inherit; font-size: 11px; line-height: 1.5; }
+.legazpi-map .project-map-popup .leaflet-popup-content.leaflet-popup-scrolled { overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; scrollbar-width: thin; scrollbar-color: #c7d5e4 transparent; }
+.legazpi-map .project-map-popup .leaflet-popup-tip { background: #fff; }
+.legazpi-map .project-map-popup a.leaflet-popup-close-button { top: 7px; right: 7px; width: 24px; height: 24px; border-radius: 0; background: #fff; color: #526d8a; font-size: 19px; line-height: 23px; }
+.project-marker-card { min-width: 0; color: #345579; white-space: normal; }
+.project-marker-card :is(p, h3, h4, dl, dd, ul) { margin: 0; }
+.legazpi-map .project-marker-card p { margin: 0; }
+.project-marker-header { padding: 11px 14px 10px; border-bottom: 1px solid #e3ebf5; background: #f8fbff; }
+.project-marker-code { padding-right: 18px; color: #6b85a5; font-size: 9px; font-weight: 600; }
+.project-marker-header .project-marker-name { margin-top: 5px; padding-right: 18px; color: #234b75; font-family: inherit; font-size: 14px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.legazpi-map .project-marker-header .project-marker-location { margin-top: 4px; color: #6a83a2; font-size: 10px; }
+.legazpi-map .project-marker-header .project-marker-sample { margin-top: 3px; color: #7c8fa7; font-size: 8px; line-height: 1.4; }
+.project-marker-body { padding: 10px 12px; }
+.project-marker-badges { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 9px; font-weight: 600; }
+.project-marker-status { color: var(--project-marker-status, #285b91); }
+.project-marker-category { padding: 2px 6px; border-radius: 0; background: #eff3f8; color: #617995; font-size: 8.5px; }
+.project-marker-card .project-marker-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; margin-top: 10px; }
+.project-marker-fields dt { color: #8497af; font-size: 8px; font-weight: 500; line-height: 1.4; text-transform: uppercase; }
+.project-marker-fields dd { margin-top: 3px; color: #3d6087; font-size: 10px; font-weight: 600; overflow-wrap: anywhere; }
+.project-marker-budget dd { color: #285b91; font-size: 11px; }
+.project-marker-nearby { margin-top: 10px; padding-top: 8px; border-top: 1px solid #e7edf5; }
+.project-marker-nearby h4 { color: #8497af; font-size: 8px; font-weight: 500; text-transform: uppercase; }
+.project-marker-nearby ul { padding: 0; list-style: none; }
+.project-marker-nearby li { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 5px; }
+.project-marker-nearby li > :first-child { min-width: 0; color: #3b628e; font-size: 10px; overflow-wrap: anywhere; }
+.project-marker-nearby a { text-decoration: none; }
+.project-marker-nearby a:hover { text-decoration: underline; }
+.project-marker-distance { flex-shrink: 0; color: #7b91aa; font-size: 9px; }
+.legazpi-map .project-marker-nearby .project-marker-distance-note { margin-top: 5px; color: #899bb1; font-size: 8px; line-height: 1.4; }
+.project-marker-footer { display: flex; justify-content: flex-end; padding: 6px 12px; border-top: 1px solid #e7edf5; }
+.project-marker-footer .project-marker-action { display: inline-flex; align-items: center; gap: 5px; min-height: 24px; padding: 2px 0; color: #2c5c91; font-size: 10px; font-weight: 500; text-decoration: none; }
+.project-marker-action svg { flex-shrink: 0; width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.project-marker-footer .project-marker-action:hover { color: #173b61; text-decoration: underline; text-underline-offset: 3px; }
+.project-marker-action:focus-visible { outline: 2px solid #2563eb; outline-offset: 3px; }

@@ -1,0 +1,10 @@
+.approval-support { margin-top: 22px; padding-top: 18px; border-top: 1px solid #dce5ef; color: #4c627c; font-size: 12px; line-height: 1.8; }
+.approval-support > strong { color: #345576; font-size: 12px; font-weight: 500; }
+.approval-support > p { margin: 7px 0 10px; color: #52677f; font-size: 12px; line-height: 1.8; }
+.approval-support > a { display: inline-flex; align-items: center; gap: 7px; color: #285f98; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.approval-support-reference { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 12px; }
+.approval-support-reference > span { color: #49617d; font-size: 11px; }
+.approval-support-reference > button { position: relative; min-height: 28px; padding: 2px 0; border: 0; background: transparent; color: #285f98; font-size: 11px; text-decoration: underline; text-underline-offset: 3px; }
+.approval-support > small { display: block; margin-top: 10px; color: #5b6e83; font-size: 11px; }
+.approval-support-notice { display: block; margin-top: 6px; color: #326646; font-size: 11px; }
+.approval-support-notice:empty { display: none; }

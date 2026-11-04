@@ -1,0 +1,17 @@
+.modal { width: min(540px, calc(100% - 32px)); max-height: calc(100svh - 40px); padding: 0; overflow-y: auto; overscroll-behavior: contain; border: 1px solid #cbd7e6; border-radius: 0; background: #fff; color: #5d7592; animation: none; transition: none; }
+.modal::backdrop { background: #102b4b55; -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); animation: none; transition: none; }
+.modal-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding: 24px; border-bottom: 1px solid #e2e9f2; }
+.modal-header h2 { margin: 0; color: #274969; font-size: 20px; font-weight: 600; line-height: 1.5; letter-spacing: -.02em; }
+.modal-header p { margin: 7px 0 0; color: #5c6f86; font-size: 12px; line-height: 1.8; }
+.modal-header .icon-button { display: grid; place-items: center; flex-shrink: 0; width: 30px; height: 30px; padding: 0; border: 1px solid #dce4ef; background: #fff; color: #5c6f86; }
+.otp-help-modal { width: min(460px, calc(100% - 32px)); }
+.otp-help-modal-body { padding: 22px 24px 24px; }
+.otp-help-modal-body > p, .otp-help-modal-body li { margin: 0; color: #4c627c; font-size: 13px; line-height: 1.9; }
+.otp-help-modal-body ul { padding-left: 20px; }
+.otp-help-modal-body li + li { margin-top: 8px; }
+.otp-help-modal-body > .primary-button { margin-top: 22px; }
+@media (max-width: 760px) {
+  .modal-header { gap: 12px; padding: 17px 18px; }
+  .modal-header h2 { font-size: 17px; }
+  .otp-help-modal-body { padding: 18px; }
+}
